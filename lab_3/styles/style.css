@@ -13,3 +13,7 @@ header, section, article, nav, aside, footer, div {
 .BlogPost {
     background-color: lightblue;
 }
+
+#PageContent {
+    border: 1px dashed red;
+}
