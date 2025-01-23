@@ -1,3 +1,3 @@
-exoports.myDateTime = function() {
+exports.myDateTime = function() {
     return Date();
 };
