@@ -9,3 +9,11 @@ header, section, article, nav, aside, footer, div {
     padding: 10px;
     margin: 10px;
 }
+
+.BlogPost {
+    background-color: lightblue;
+}
+
+#PageContent {
+    border: 1px dashed red;
+}
