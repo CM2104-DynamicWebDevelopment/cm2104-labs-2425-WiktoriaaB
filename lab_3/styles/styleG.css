@@ -1,0 +1,129 @@
+
+body {
+    margin: auto;
+    width: 100%;
+}
+
+header, section, nav, aside, footer, div {
+    font-family: sans-serif;
+    border: 1px dotted #000;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+#PageHeader {
+    overflow: hidden;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+#SiteLogo {
+    width: 15%;
+    float: left;
+    margin: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#SiteTitle {
+    float: right;
+    display: inline-block;
+    width: 70%;
+    margin: 55px;
+    padding: 55px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#PageContent {
+    border-style: dashed;
+    border-color: rgb(6, 6, 6);
+    overflow: hidden;
+}
+#SiteNavigation ul {
+    list-style-type: none;
+    margin: 0;
+}
+#SiteNavigation li {
+    display: inline-block;
+    margin-right: 10px;
+}
+#SiteNavigation a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+#SiteNavigation a:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+#PageContent, #SiteNavigation, #ImageDetails {
+    clear: both;
+}
+
+#MainPhoto {
+    width: 68%;
+    float: left;
+}
+
+#BunchPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 440px;
+    float: right;
+    margin: 5px 100px;
+}
+
+.photo {
+    width: 26%;
+    margin: 5px;
+    box-sizing: border-box;
+}
+.Comments {
+    clear: right;
+    float: right;
+    width: 81%;
+    margin: 2px 100px;
+}
+
+.Comments div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 114%;
+    font-size: xx-small;
+    margin: 5px;
+}
+
+#RightSide {
+    border: none;
+    margin: 2px;
+}
+.Photos {
+    display: -webkit-box;
+    display: flex;
+    flex-direction: row;
+    border: none;
+   }
+
+#idetails {
+    float: left;
+    width: 66%;
+    padding: 10px;
+    margin: 30px 14px;
+    border: 1px dashed red;
+}
+
+#PageFooter {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+
+

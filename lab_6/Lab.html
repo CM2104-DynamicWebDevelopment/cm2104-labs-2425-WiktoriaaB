@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script src="myscript.js"></script>
+    </head>
+    <body>
+
+        <h1 id="id1">My Heading 1</h1>
+
+        <button type="button" onclick="document.getElementById('id1').style.color = 'red';">
+
+                Click Me!
+        </button>
+    </body>
+    <button type="button" onclick="go()">
+        Click Me Too!
+    </button>
+
+    <script>
+        function go() {
+            document.getElementById('id1').style.color ='blue';
+        }
+    </script>
+
+    <button type="button" onclick="goAgain()">
+        Click Me for yellow
+    </button>
+</html>
