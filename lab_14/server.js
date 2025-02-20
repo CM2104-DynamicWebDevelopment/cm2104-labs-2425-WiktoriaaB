@@ -6,10 +6,24 @@ var app = express();
 app.set('view engine', 'ejs');
 // use res.render to load up an ejs view file
 // index page
-app.get('/', function(req, res) {
- res.render('pages/index');
-});
+//app.get('/', function(req, res) {
+ //res.render('pages/index');
+//});
 // about page
+// new route
+app.get('/', function(req, res) {
+    var drinks = [
+    { name: 'Bloody Mary', drunkness: 3 },
+    { name: 'Martini', drunkness: 5 },
+    { name: 'Scotch', drunkness: 10 }
+    ];
+    var tagline = "Any code of your own that you havent looked at for six or more months might as well have been written by someoneelse.";
+    res.render('pages/index', {
+    drinks: drinks,
+    tagline: tagline
+    });
+   });
+
 app.get('/about', function(req, res) {
  res.render('pages/about');
 });
