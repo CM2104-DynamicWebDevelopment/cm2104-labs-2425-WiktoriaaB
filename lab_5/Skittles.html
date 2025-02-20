@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jedi</title>
+    </head>
+    <body>
+        <p id="skittles">skittles</p>
+        <p>Fear</p>
+        <p>Anger</p>
+
+        <script>
+            let paragraphs = document.getElementsByTagName("p");
+            document.body.insertBefore(paragraphs[2],paragraphs[0]);
+            console.log(paragraphs.length);
+            let test ="cat"
+            let newPara = document.createElement("p");
+            let text = document.createTextNode("A Jedi craves not these things");
+            newPara.appendChild(text);
+            document.body.appendChild(newPara);
+           
+        </script>
+    </body>
+</html>
