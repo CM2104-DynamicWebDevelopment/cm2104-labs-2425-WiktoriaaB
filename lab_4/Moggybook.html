@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title> Moggybook </title>
+    <link rel="stylesheet" type="text/css" href="styles/MB.css">
+    <script>
+        function testResults(form) {
+            var username = form.username.value;
+            var username = form.breed.value;
+            var username = form.email.value;
+            var username = form.homepage.value;
+            var username = form.dateofbirth.value;
+            var username = form.about.value;
+            alert ("You registered: " + username + ", ");
+        }
+    </script>
+    </head>
+    <body>
+        <h1> Moggybook!</h1>
+
+        <form>
+            <table cellspacing="5" cellpadding="5">
+                <tr>
+                    <td>Username:</td>
+                    <td>
+                        <input type="textarea" name="username" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Breed</td>
+                    <td> 
+                        <input type="textarea" name="breed" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>email</td>
+                    <td> 
+                        <input type="textarea" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>homepage</td>
+                    <td> 
+                        <input type="textarea" name="homepage" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>date of birth</td>
+                    <td> 
+                        <input type="date" name="date of birth" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>about</td>
+                    <td> 
+                        <textarea name="about" rows="3" cols="45" required>
+                        </textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" name="submit" value="Submit" onClick="testResults(this.form)" />
+        </form>
+    </body>
+</html>
